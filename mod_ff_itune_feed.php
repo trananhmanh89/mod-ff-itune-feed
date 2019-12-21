@@ -1,4 +1,13 @@
 <?php
+/**
+ * @package     Funfis
+ * @subpackage  mod_ff_itune_feed
+ *
+ * @copyright   https://funfis.com
+ * @license     GNU General Public License version 2 or later;
+ */
+
+
 defined('_JEXEC') or die('Restricted access');
 
 require_once __DIR__ . '/helper.php';

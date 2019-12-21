@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.1" client="site" method="upgrade">
-    <name>Itune Feed Module</name>
+    <name>mod_ff_itune_feed</name>
     <author>Funfis</author>
     <creationDate>December 2019</creationDate>
     <copyright>https://funfis.com</copyright>
@@ -9,7 +9,11 @@
     <authorUrl>https://funfis.com</authorUrl>
     <version>1.0.0</version>
     <description><![CDATA[
-<p>Display apple feed ( <a target="_blank" href="https://rss.itunes.apple.com/en-us">https://rss.itunes.apple.com/en-us</a> )</p>
+<p>Module to display itune feed</p>
+<p><b>Guide:</b></p>
+<p>1. Generate a feed from here ( <a target="_blank" href="https://rss.itunes.apple.com/en-us">https://rss.itunes.apple.com/en-us</a> )</p>
+<p>2. Copy that feed url to "Feed Url" setting.</p>
+<p>3. Save and see the result</p>
 ]]></description>
     <files>
         <filename module="mod_ff_itune_feed">mod_ff_itune_feed.php</filename>
@@ -19,7 +23,11 @@
     </files>
     <languages>
         <language tag="en-GB">en-GB.mod_ff_itune_feed.ini</language>
+        <language tag="en-GB">en-GB.mod_ff_itune_feed.sys.ini</language>
     </languages>
+    <updateservers>
+        <server type="collection" name="mod_ff_itune_feed">https://funfis.com/update_server/list.xml</server>
+    </updateservers>
     <config>
         <fields name="params">
             <fieldset name="basic">
