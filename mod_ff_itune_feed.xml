@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+    <name>Itune Feed Module</name>
+    <author>Funfis</author>
+    <creationDate>December 2019</creationDate>
+    <copyright>https://funfis.com</copyright>
+    <license>GPL v2</license>
+    <authorEmail>funfis.com@gmail.com</authorEmail>
+    <authorUrl>https://funfis.com</authorUrl>
+    <version>1.0.0</version>
+    <description><![CDATA[
+<p>Display apple feed ( <a target="_blank" href="https://rss.itunes.apple.com/en-us">https://rss.itunes.apple.com/en-us</a> )</p>
+]]></description>
+    <files>
+        <filename module="mod_ff_itune_feed">mod_ff_itune_feed.php</filename>
+        <filename>helper.php</filename>
+        <folder>assets</folder>
+        <folder>tmpl</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">en-GB.mod_ff_itune_feed.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field 
+                    type="text" 
+                    label="Feed Url" 
+                    name="feed_url" 
+                    default="https://rss.itunes.apple.com/api/v1/us/apple-music/coming-soon/all/10/explicit.json"
+                    description="Generate feed url from https://rss.itunes.apple.com/en-us" />
+
+                <field 
+                    type="text" 
+                    label="Update Time" 
+                    name="update_time" 
+                    default="3600"
+                    description="Time to update the feed. Count as second." />
+            </fieldset>
+            <fieldset name="advanced">
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+                />
+
+                <field
+                    name="moduleclass_sfx"
+                    type="textarea"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+                    rows="3"
+                />
+
+                <field
+                    name="cache"
+                    type="list"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC"
+                    default="1"
+                    filter="integer"
+                    >
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field
+                    name="cache_time"
+                    type="number"
+                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                    description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+                    default="900"
+                    filter="integer"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

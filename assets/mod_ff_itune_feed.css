@@ -1,0 +1,13 @@
+.ff-feed-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.ff-feed-item__image {
+    width: 60px;
+    flex-shrink: 0;
+}
+
+.ff-feed-item__detail {
+    margin-left: 10px;
+}
