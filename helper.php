@@ -54,12 +54,12 @@ class ModFFItuneFeedHelper
             $res = JHttpFactory::getHttp($options)->get($url);
         } catch (RuntimeException $e)
         {
-            return $app->enQueueMessage("Apple Feed Module Error: Couldn't get feed. Module " . $module->id);
+            return $app->enQueueMessage("Apple Feed Module Error: Couldn't get feed.");
         }
 
         if ($res->code != 200)
         {
-            return $app->enQueueMessage("Apple Feed Module Error: Couldn't get feed. Module " . $module->id);
+            return $app->enQueueMessage("Apple Feed Module Error: Couldn't get feed.");
         }
 
         JFile::write($cacheFile, $res->body);
