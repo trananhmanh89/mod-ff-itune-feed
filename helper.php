@@ -76,7 +76,7 @@ class ModFFItuneFeedHelper
         $module = JTable::getInstance('module');
         $module->load($id);
 
-        if (!$module->id) {
+        if (!$module->id || $module->module !== 'mod_ff_itune_feed' || !$module->published) {
             die('Error! Unknow module.');
         }
 
