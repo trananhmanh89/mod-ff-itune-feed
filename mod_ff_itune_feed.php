@@ -1,6 +1,6 @@
 <?php
 /**
- * @package     Funfis
+ * @package     Itune Feed Module
  * @subpackage  mod_ff_itune_feed
  *
  * @copyright   https://funfis.com
