@@ -52,10 +52,6 @@
                     name="num_item"
                     default="25" />
 
-                <field name="show_rank" type="radio" default="0" label="Show rank" description="" class="btn-group btn-group-yesno">
-                    <option value="1">JYES</option>
-                    <option value="0">JNO</option>
-                </field>
             </fieldset>
             <fieldset name="advanced">
                 <field

@@ -8,8 +8,6 @@
  */
 
 defined('_JEXEC') or die('Restricted access');
-
-$showRank = $params->get('show_rank');
 ?>
 <div class="mod-<?php echo $module->id ?> ff-feed-items">
     <?php foreach ($items as $key => $item): ?>
@@ -21,11 +19,9 @@ $showRank = $params->get('show_rank');
         $isLong = $key + 1 > 99 ? true : false;
     ?>
     <div class="ff-feed-item">
-        <?php if ($showRank): ?>
         <div class="ff-feed-item__rank <?php echo $isLong ? 'ff-feed-item__rank--long' : '' ?>">
             <?php echo $key + 1 ?>
         </div>
-        <?php endif ?>
         <div class="ff-feed-item__image">
             <a href="<?php echo $item->url ?>">
                 <img src="<?php echo $item->artworkUrl100 ?>" alt="<?php echo $item->name ?>">
