@@ -44,6 +44,18 @@
                     name="update_time" 
                     default="3600"
                     description="Time to update the feed. Count as second." />
+
+                <field
+                    type="number"
+                    label="Number Item"
+                    description="Number of items to show"
+                    name="num_item"
+                    default="25" />
+
+                <field name="show_rank" type="radio" default="0" label="Show rank" description="" class="btn-group btn-group-yesno">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
             </fieldset>
             <fieldset name="advanced">
                 <field
