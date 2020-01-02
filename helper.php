@@ -44,6 +44,8 @@ class ModFFItuneFeedHelper
 
     protected static function setCache($cacheFile, $updateTimeFile, $url)
     {
+        JFile::write($updateTimeFile, time());
+
         $app = JFactory::getApplication();
 
         $options = new JRegistry;
