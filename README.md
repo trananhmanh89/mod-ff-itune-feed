@@ -1,6 +1,9 @@
 # Itune Feed Module for Joomla
-**[Download](https://github.com/trananhmanh89/mod-ff-itune-feed/releases)**
 
+## Download
+**[Link](https://github.com/trananhmanh89/mod-ff-itune-feed/releases)**
+
+## Demo
 ![2019-12-28_094847](https://user-images.githubusercontent.com/20571336/75088703-9fe6c800-5583-11ea-98f4-78e03afcd520.png)
 
 Module allows to show itune feed like apple music, itune music, ios apps ... on joomla
