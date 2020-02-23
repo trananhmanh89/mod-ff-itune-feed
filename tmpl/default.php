@@ -23,13 +23,13 @@ defined('_JEXEC') or die('Restricted access');
             <?php echo $key + 1 ?>
         </div>
         <div class="ff-feed-item__image">
-            <a href="<?php echo $item->url ?>">
+            <a href="<?php echo $item->url ?>" target="_blank">
                 <img src="<?php echo $item->artworkUrl100 ?>" alt="<?php echo $item->name ?>">
             </a>
         </div>
         <div class="ff-feed-item__detail">
             <div class="ff-feed-item__title">
-                <a href="<?php echo $item->url ?>">
+                <a href="<?php echo $item->url ?>" target="_blank">
                     <?php echo $item->name ?>
                 </a>
             </div>
