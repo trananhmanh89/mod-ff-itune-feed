@@ -3,9 +3,9 @@
     <name>Itune Feed Display</name>
     <author>Mr Meo</author>
     <creationDate>December 2019</creationDate>
-    <copyright>https://github.com/trananhmanh89/mod-ff-music-chart</copyright>
+    <copyright>https://github.com/trananhmanh89/mod-ff-itune-feed</copyright>
     <license>GPL v2</license>
-    <authorUrl>https://github.com/trananhmanh89/mod-ff-music-chart</authorUrl>
+    <authorUrl>https://github.com/trananhmanh89/mod-ff-itune-feed</authorUrl>
     <version>1.0.0</version>
     <description><![CDATA[
 <p>Module to display itune feed</p>
@@ -13,6 +13,7 @@
 <p>1. Generate a feed from here ( <a target="_blank" href="https://rss.itunes.apple.com/en-us">https://rss.itunes.apple.com/en-us</a> )</p>
 <p>2. Copy that feed url to "Feed Url" setting.</p>
 <p>3. Save and see the result</p>
+<p>Contact me: <a href="https://github.com/trananhmanh89/mod-ff-itune-feed" target="_blank" >Github</a></p>
 ]]></description>
     <files>
         <filename module="mod_ff_itune_feed">mod_ff_itune_feed.php</filename>
