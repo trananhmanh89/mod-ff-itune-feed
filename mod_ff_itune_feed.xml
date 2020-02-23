@@ -19,6 +19,7 @@
         <filename module="mod_ff_itune_feed">mod_ff_itune_feed.php</filename>
         <filename>helper.php</filename>
         <folder>assets</folder>
+        <folder>fields</folder>
         <folder>tmpl</folder>
     </files>
     <languages>
@@ -30,7 +31,12 @@
     </updateservers>
     <config>
         <fields name="params">
-            <fieldset name="basic">
+            <fieldset name="basic" addfieldpath="/modules/mod_ff_itune_feed/fields/">
+                <field
+                    type="sponsor"
+                    label="Like my work?"
+                    name="like_my_work"
+                />
                 <field 
                     type="text" 
                     label="Feed Url" 
