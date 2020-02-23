@@ -25,3 +25,6 @@ This module use App Rss Generator.
 4. Save and enjoy.
 
 **[Download](https://github.com/trananhmanh89/mod-ff-itune-feed/releases)**
+
+## Like my work?
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I3I71FSC5)
