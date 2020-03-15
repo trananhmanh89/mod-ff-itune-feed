@@ -27,7 +27,7 @@
         <language tag="en-GB">en-GB.mod_ff_itune_feed.sys.ini</language>
     </languages>
     <updateservers>
-        <server type="collection" name="mod_ff_itune_feed">https://raw.githubusercontent.com/trananhmanh89/ff-update-server/master/list.xml</server>
+        <server type="collection" name="FF Update Server">https://raw.githubusercontent.com/trananhmanh89/ff-update-server/master/list.xml</server>
     </updateservers>
     <config>
         <fields name="params">
